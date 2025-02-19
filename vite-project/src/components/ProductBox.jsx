@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 const ProductBox = ({imgSrc, productTitle}) => {
   return (
@@ -9,6 +10,12 @@ const ProductBox = ({imgSrc, productTitle}) => {
     </div>
   )
 }
+
+
+ProductBox.propTypes ={
+  imgSrc: PropTypes.string,
+  productTitle: PropTypes.string
+} 
 
 export default ProductBox
 
